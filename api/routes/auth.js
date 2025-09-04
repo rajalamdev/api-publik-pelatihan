@@ -1,7 +1,7 @@
 const express = require('express');
 require('dotenv').config();
-const authenticate = require('../lib/authenticate')
-const authController = require('../controllers/authController')
+const authenticate = require('../../lib/authenticate')
+const authController = require('../../controllers/authController')
 
 const router = express.Router()
 
