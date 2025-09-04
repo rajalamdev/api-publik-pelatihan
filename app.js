@@ -12,7 +12,8 @@ app.use(cookieParser());
 app.use(routes);
 
 app.listen(port, () => {
-    console.log('run di http://localhost:'+ port);
+    app.get('/', (req, res) => {
+        res.send('Hello World');
+    });
 })
-
 
