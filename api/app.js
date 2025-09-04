@@ -13,6 +13,7 @@ app.use(cookieParser());
 // default route
 app.get("/", (req, res) => {
   res.send("Hello World 🚀");
+  console.log("Hello World 🚀");
 });
 
 // pakai semua routing dari /routes
