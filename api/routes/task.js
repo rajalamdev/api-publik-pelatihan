@@ -4,7 +4,7 @@ const router = express.Router();
 const authenticate = require('../../lib/authenticate');
 
 router.post('/', authenticate ,taskController.createTask);
-router.get('/', authenticate ,taskController.getTask);
+router.get('/',taskController.getTask);
 router.put('/:id', authenticate ,taskController.updateTask);
 router.delete('/:id', authenticate ,taskController.deleteTask);
 

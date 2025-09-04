@@ -11,12 +11,13 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 
+// Pakai semua routing
+app.use("/api", routes);
+
 // Default route
 app.get("/", (req, res) => {
   res.send("Hello World 🚀 from Vercel");
 });
 
-// Pakai semua routing
-app.use("/api", routes);
 
 module.exports = serverless(app);
